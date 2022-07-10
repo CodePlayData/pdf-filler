@@ -9,13 +9,11 @@
 
 ## Sobre
 Esse módulo permite o preenchimento automatizado dos PDF usados na regra negócio a depender dos inputs de entrada.
-Os documentos LME, TCLE, Formulário de Risco à gravidez do uso da Acitretina, Receituario e Formulário de prescrição, já estão implementados nos casos de uso: PDFInfo, usado para obter informações de entrada desses formulários citados; PreencherDocumentacao, preenche um ou mais formularios escolhidos segundo seus inputs **em ordem**; e PreencherPDF, que preenche apenas um formulário.
 
 <br>
 
 ### Desenvolvimento
-Caso seja necessário implementar algum novo documento extenda a nova classe do `GenericoRepository.ts` e implemente no objeto que usado como *map* nas regras de uso que estão na pasta `/app`.
-
+Extenda a nova classe do `GenericoRepository.ts` com um input específico e uma handler function que preencha essa formulário pdf.
 <br>
 
 ### Testes
@@ -24,8 +22,3 @@ Os testes não puderam ser implementados seguindo as práticas comuns dado que t
 ---
 
 <br>
-
-
-### Deno
-
-O repositório possui duas branches, a principal é a `node` mas existe uma branch para o uso no framework **Deno** (no caso branch *deno*).

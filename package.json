@@ -1,6 +1,6 @@
 {
-  "name": "pdfhandler",
-  "version": "1.0.0",
+  "name": "pdf-filler",
+  "version": "0.1.0",
   "description": "",
   "type": "module",
   "main": "index.js",
